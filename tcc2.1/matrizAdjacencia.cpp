@@ -82,10 +82,12 @@ void carrega_matrizAdj(int **matriz, const char *nome_arquivo){
             infile >> aux;
             getline(infile, linha);
             vector<string> v{explode(linha, ' ')};
-            for(auto n:v){
-                aux = stoi(n);
-                matriz[i][aux-1] = 1;
-                matriz[aux-1][i] = 1;
+            for(unsigned int i = 0; i < v.size(); i++){
+                //if(isdigit(v[i])){
+                    aux = stoi(v[i]);
+                    matriz[i][aux-1] = 1;
+                    matriz[aux-1][i] = 1;
+                //}
             }
         }
 

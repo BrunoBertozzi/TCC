@@ -50,7 +50,7 @@ void ILS(){
 
     //_______________________________________________________________________
 
-    //imprimir_bins(S_inicial, items);
+    imprimir_bins(S_inicial, items);
     phyInicial = somatorio_phi(S_inicial, 1, 1);
     phyS_best = phyInicial;
     Klb = calcula_Klb(items, info_bins);

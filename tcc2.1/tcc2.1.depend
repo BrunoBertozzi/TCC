@@ -57,7 +57,7 @@
 	"delta.h"
 	"pertubacao.h"
 
-1573529312 source:c:\users\bruno\desktop\tcc2.1\ils.cpp
+1573581540 source:c:\users\bruno\desktop\tcc2.1\ils.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -91,7 +91,7 @@
 	"delta.h"
 	"pertubacao.h"
 
-1573222606 source:c:\users\bruno\desktop\tcc2.1\matrizadjacencia.cpp
+1573581522 source:c:\users\bruno\desktop\tcc2.1\matrizadjacencia.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -147,7 +147,7 @@
 
 1572991084 c:\users\bruno\desktop\tcc2.1\busca_local.h
 
-1573530619 source:c:\users\bruno\desktop\tcc2.1\busca_local.cpp
+1573575795 source:c:\users\bruno\desktop\tcc2.1\busca_local.cpp
 	<iostream>
 	<vector>
 	<iostream>

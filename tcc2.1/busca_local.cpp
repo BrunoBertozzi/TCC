@@ -151,8 +151,8 @@ int busca_local(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBin
     }
 
     //cout << "Phi: " << *phyI << endl;
-    //cout << " movimento: " << movimento<< " swap: " << cont_swap << " realoc: " << cont_realoc << " swap2_1: " << cont_swap2_1
-    //<< " bin1: "<< bin1_m << " iten1: " << iten1_m <<  " iten2: " << iten2_m << " bin2: "<< bin2_m << " iten3: " << iten3_m << " delta melhor: " << delta_melhor << endl;
+    cout << " movimento: " << movimento<< " swap: " << cont_swap << " realoc: " << cont_realoc << " swap2_1: " << cont_swap2_1
+    << " bin1: "<< bin1_m << " iten1: " << iten1_m <<  " iten2: " << iten2_m << " bin2: "<< bin2_m << " iten3: " << iten3_m << " delta melhor: " << delta_melhor << endl;
 
 
 
