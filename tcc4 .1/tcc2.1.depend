@@ -1,0 +1,870 @@
+# depslib dependency file v1.0
+1574265488 source:c:\users\bruno\desktop\tcc2.1\algoritmo_inicial.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<bits/stdc++.h>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1572977100 c:\users\bruno\desktop\tcc2.1\arquivo.h
+
+1572978404 c:\users\bruno\desktop\tcc2.1\matrizadjacencia.h
+
+1574266528 c:\users\bruno\desktop\tcc2.1\geral.h
+
+1574189211 c:\users\bruno\desktop\tcc2.1\algoritmo_inicial.h
+
+1574180961 c:\users\bruno\desktop\tcc2.1\ils.h
+
+1573222606 source:c:\users\bruno\desktop\tcc2.1\arquivo.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574266585 source:c:\users\bruno\desktop\tcc2.1\geral.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574263628 source:c:\users\bruno\desktop\tcc2.1\ils.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574266350 source:c:\users\bruno\desktop\tcc2.1\main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574171174 source:c:\users\bruno\desktop\tcc2.1\matrizadjacencia.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1572975718 c:\users\bruno\desktop\tcc2.1\funcao_avaliacao.h
+
+1573222606 source:c:\users\bruno\desktop\tcc2.1\funcao_avaliacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1572363886 c:\users\bruno\desktop\tcc2.1\matriz_iten_bin.h
+
+1573222606 source:c:\users\bruno\desktop\tcc2.1\matriz_iten_bin.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1572991084 c:\users\bruno\desktop\tcc2.1\busca_local.h
+
+1574263577 source:c:\users\bruno\desktop\tcc2.1\busca_local.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1572978404 c:\users\bruno\desktop\tcc2.1\delta.h
+
+1574200690 source:c:\users\bruno\desktop\tcc2.1\delta.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1573225132 c:\users\bruno\desktop\tcc2.1\pertubacao.h
+
+1574200811 source:c:\users\bruno\desktop\tcc2.1\pertubacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574777669 source:c:\users\bruno\desktop\tcc2\algoritmo_inicial.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<bits/stdc++.h>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1572977100 c:\users\bruno\desktop\tcc2\arquivo.h
+
+1572978404 c:\users\bruno\desktop\tcc2\matrizadjacencia.h
+
+1574266528 c:\users\bruno\desktop\tcc2\geral.h
+
+1574189211 c:\users\bruno\desktop\tcc2\algoritmo_inicial.h
+
+1574700301 c:\users\bruno\desktop\tcc2\ils.h
+
+1572975718 c:\users\bruno\desktop\tcc2\funcao_avaliacao.h
+
+1572363886 c:\users\bruno\desktop\tcc2\matriz_iten_bin.h
+
+1572991084 c:\users\bruno\desktop\tcc2\busca_local.h
+
+1574689826 c:\users\bruno\desktop\tcc2\delta.h
+
+1573225132 c:\users\bruno\desktop\tcc2\pertubacao.h
+
+1573222606 source:c:\users\bruno\desktop\tcc2\arquivo.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574777542 source:c:\users\bruno\desktop\tcc2\busca_local.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574777790 source:c:\users\bruno\desktop\tcc2\delta.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1573222606 source:c:\users\bruno\desktop\tcc2\funcao_avaliacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778022 source:c:\users\bruno\desktop\tcc2\geral.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778022 source:c:\users\bruno\desktop\tcc2\ils.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778193 source:c:\users\bruno\desktop\tcc2\main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1573222606 source:c:\users\bruno\desktop\tcc2\matriz_iten_bin.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778193 source:c:\users\bruno\desktop\tcc2\matrizadjacencia.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778203 source:c:\users\bruno\desktop\tcc2\pertubacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574777669 source:c:\users\bruno\desktop\tcc4\algoritmo_inicial.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<bits/stdc++.h>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1572977100 c:\users\bruno\desktop\tcc4\arquivo.h
+
+1572978404 c:\users\bruno\desktop\tcc4\matrizadjacencia.h
+
+1574266528 c:\users\bruno\desktop\tcc4\geral.h
+
+1574189211 c:\users\bruno\desktop\tcc4\algoritmo_inicial.h
+
+1574700301 c:\users\bruno\desktop\tcc4\ils.h
+
+1572975718 c:\users\bruno\desktop\tcc4\funcao_avaliacao.h
+
+1572363886 c:\users\bruno\desktop\tcc4\matriz_iten_bin.h
+
+1574780585 c:\users\bruno\desktop\tcc4\busca_local.h
+
+1574780744 c:\users\bruno\desktop\tcc4\delta.h
+
+1573225132 c:\users\bruno\desktop\tcc4\pertubacao.h
+
+1573222606 source:c:\users\bruno\desktop\tcc4\arquivo.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574780744 source:c:\users\bruno\desktop\tcc4\busca_local.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574780875 source:c:\users\bruno\desktop\tcc4\delta.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1573222606 source:c:\users\bruno\desktop\tcc4\funcao_avaliacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778022 source:c:\users\bruno\desktop\tcc4\geral.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574780585 source:c:\users\bruno\desktop\tcc4\ils.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778193 source:c:\users\bruno\desktop\tcc4\main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1573222606 source:c:\users\bruno\desktop\tcc4\matriz_iten_bin.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778193 source:c:\users\bruno\desktop\tcc4\matrizadjacencia.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574778203 source:c:\users\bruno\desktop\tcc4\pertubacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+
+1574965354 source:c:\users\bruno\desktop\tcc4 .1\algoritmo_inicial.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<bits/stdc++.h>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1572977100 c:\users\bruno\desktop\tcc4 .1\arquivo.h
+
+1572978404 c:\users\bruno\desktop\tcc4 .1\matrizadjacencia.h
+
+1574266528 c:\users\bruno\desktop\tcc4 .1\geral.h
+
+1574189211 c:\users\bruno\desktop\tcc4 .1\algoritmo_inicial.h
+
+1574700301 c:\users\bruno\desktop\tcc4 .1\ils.h
+
+1572975718 c:\users\bruno\desktop\tcc4 .1\funcao_avaliacao.h
+
+1572363886 c:\users\bruno\desktop\tcc4 .1\matriz_iten_bin.h
+
+1575040538 c:\users\bruno\desktop\tcc4 .1\busca_local.h
+
+1574780744 c:\users\bruno\desktop\tcc4 .1\delta.h
+
+1573225132 c:\users\bruno\desktop\tcc4 .1\pertubacao.h
+
+1574965354 source:c:\users\bruno\desktop\tcc4 .1\arquivo.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1575041915 source:c:\users\bruno\desktop\tcc4 .1\busca_local.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1574965354 source:c:\users\bruno\desktop\tcc4 .1\delta.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1574965353 source:c:\users\bruno\desktop\tcc4 .1\funcao_avaliacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1574965353 source:c:\users\bruno\desktop\tcc4 .1\geral.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1575047456 source:c:\users\bruno\desktop\tcc4 .1\ils.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1575047501 source:c:\users\bruno\desktop\tcc4 .1\main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1574965353 source:c:\users\bruno\desktop\tcc4 .1\matriz_iten_bin.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1574965354 source:c:\users\bruno\desktop\tcc4 .1\matrizadjacencia.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1574965354 source:c:\users\bruno\desktop\tcc4 .1\pertubacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1574965873 c:\users\bruno\desktop\tcc4 .1\ils2.h
+
+1575047429 source:c:\users\bruno\desktop\tcc4 .1\ils2.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
