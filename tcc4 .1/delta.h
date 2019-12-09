@@ -23,4 +23,9 @@ int delta_conflito_swap_2_1_2(const int id_item1, const int id_item2, const int 
 int delta_remove_peso(vector<Tbin> &bins, const vector<Titem> itens, const int iten, const int bin_recebe, const int peso_max_bin);
 int delta_remove_conflito(const int id_item1, const int bin, const int **matriz_adj, const vector<int> itens);
 
+
+int calcula_delta_swap_2_1_ILS3(const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, int *iten_2, int *iten_3, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww);
+int calcula_delta_realocate_ILS3 (const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww);
+int calcula_delta_swap_ILS3(const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, int *iten_2, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww);
+
 #endif // DELTA_H_INCLUDED

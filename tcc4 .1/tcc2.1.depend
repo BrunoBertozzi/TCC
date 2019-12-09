@@ -649,19 +649,19 @@
 
 1572978404 c:\users\bruno\desktop\tcc4 .1\matrizadjacencia.h
 
-1574266528 c:\users\bruno\desktop\tcc4 .1\geral.h
+1575504184 c:\users\bruno\desktop\tcc4 .1\geral.h
 
 1574189211 c:\users\bruno\desktop\tcc4 .1\algoritmo_inicial.h
 
-1574700301 c:\users\bruno\desktop\tcc4 .1\ils.h
+1575568565 c:\users\bruno\desktop\tcc4 .1\ils.h
 
 1572975718 c:\users\bruno\desktop\tcc4 .1\funcao_avaliacao.h
 
 1572363886 c:\users\bruno\desktop\tcc4 .1\matriz_iten_bin.h
 
-1575040538 c:\users\bruno\desktop\tcc4 .1\busca_local.h
+1575581254 c:\users\bruno\desktop\tcc4 .1\busca_local.h
 
-1574780744 c:\users\bruno\desktop\tcc4 .1\delta.h
+1575604952 c:\users\bruno\desktop\tcc4 .1\delta.h
 
 1573225132 c:\users\bruno\desktop\tcc4 .1\pertubacao.h
 
@@ -682,7 +682,7 @@
 	"pertubacao.h"
 	"ILS2.h"
 
-1575041915 source:c:\users\bruno\desktop\tcc4 .1\busca_local.cpp
+1575605584 source:c:\users\bruno\desktop\tcc4 .1\busca_local.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -702,7 +702,7 @@
 	"pertubacao.h"
 	"ILS2.h"
 
-1574965354 source:c:\users\bruno\desktop\tcc4 .1\delta.cpp
+1575603115 source:c:\users\bruno\desktop\tcc4 .1\delta.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -737,7 +737,7 @@
 	"pertubacao.h"
 	"ILS2.h"
 
-1574965353 source:c:\users\bruno\desktop\tcc4 .1\geral.cpp
+1575504419 source:c:\users\bruno\desktop\tcc4 .1\geral.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -754,7 +754,7 @@
 	"pertubacao.h"
 	"ILS2.h"
 
-1575047456 source:c:\users\bruno\desktop\tcc4 .1\ils.cpp
+1575650006 source:c:\users\bruno\desktop\tcc4 .1\ils.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -774,7 +774,7 @@
 	"pertubacao.h"
 	"ILS2.h"
 
-1575047501 source:c:\users\bruno\desktop\tcc4 .1\main.cpp
+1575603556 source:c:\users\bruno\desktop\tcc4 .1\main.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -790,6 +790,7 @@
 	"delta.h"
 	"pertubacao.h"
 	"ILS2.h"
+	"ILS3.h"
 
 1574965353 source:c:\users\bruno\desktop\tcc4 .1\matriz_iten_bin.cpp
 	<iostream>
@@ -846,9 +847,9 @@
 	"pertubacao.h"
 	"ILS2.h"
 
-1574965873 c:\users\bruno\desktop\tcc4 .1\ils2.h
+1575564053 c:\users\bruno\desktop\tcc4 .1\ils2.h
 
-1575047429 source:c:\users\bruno\desktop\tcc4 .1\ils2.cpp
+1575650192 source:c:\users\bruno\desktop\tcc4 .1\ils2.cpp
 	<iostream>
 	<vector>
 	<iostream>
@@ -856,6 +857,7 @@
 	<cstdlib>
 	<ctime>
 	<cmath>
+	<cstring>
 	"arquivo.h"
 	"matrizAdjacencia.h"
 	"geral.h"
@@ -867,4 +869,27 @@
 	"delta.h"
 	"pertubacao.h"
 	"ILS2.h"
+
+1575650192 source:c:\users\bruno\desktop\tcc4 .1\ils3.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<cstring>
+	"arquivo.h"
+	"matrizAdjacencia.h"
+	"geral.h"
+	"algoritmo_inicial.h"
+	"ILS.h"
+	"funcao_avaliacao.h"
+	"matriz_iten_bin.h"
+	"busca_local.h"
+	"delta.h"
+	"pertubacao.h"
+	"ILS2.h"
+
+1575580610 c:\users\bruno\desktop\tcc4 .1\ils3.h
 

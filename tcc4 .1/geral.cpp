@@ -157,3 +157,18 @@ void confere_conflitos(const vector<Tbin> bins, const int **matriz_adj){
         }
     }
 }
+
+void imprimir_bins_2(const vector<Tbin> bins, const vector<Titem> items, double cpu_time_used){
+    cout << bins.size() << " " << cpu_time_used << endl;
+    unsigned int j = 0;
+
+    for(unsigned int i = 0; i < bins.size(); i++){
+        j = 0;
+        cout << i+1 <<" ";
+        while(j < bins[i].items.size()){
+            cout << bins[i].items[j] << " ";
+            j++;
+        }
+        cout << endl;
+    }
+}

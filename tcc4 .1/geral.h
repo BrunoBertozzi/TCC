@@ -18,4 +18,5 @@ vector<int> erase_int1 (vector<int> v, int pos);
 void erase_bin (vector<Tbin> &v, int pos);
 void confere_peso (const vector<Tbin> bins, const vector<Titem> items);
 void confere_conflitos(const vector<Tbin> bins, const int **matriz_adj);
+void imprimir_bins_2(const vector<Tbin> bins, const vector<Titem> items, double cpu_time_used);
 #endif // GERAL_H_INCLUDED

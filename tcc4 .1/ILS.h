@@ -2,7 +2,7 @@
 #define ILS_H_INCLUDED
 #pragma once
 
-void ILS();
+void ILS(char *argv[]);
 int calcula_Klb(const vector<Titem> items, const TinfoBins infoBins);
 TinfoBins copy_info (TinfoBins original);
 void remove_bin(vector<Tbin> &bins, const vector<Titem> items,  const int **matriz_adj);

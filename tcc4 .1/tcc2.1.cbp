@@ -20,6 +20,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="BPPC_1_1_10.txt 3 50 100 25 10 5 3 500" />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
@@ -36,6 +37,8 @@
 		<Unit filename="ILS.h" />
 		<Unit filename="ILS2.cpp" />
 		<Unit filename="ILS2.h" />
+		<Unit filename="ILS3.cpp" />
+		<Unit filename="ILS3.h" />
 		<Unit filename="algoritmo_inicial.cpp" />
 		<Unit filename="algoritmo_inicial.h" />
 		<Unit filename="arquivo.cpp" />

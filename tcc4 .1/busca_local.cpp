@@ -86,13 +86,13 @@ int busca_local(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBin
     }
 
     if(movimento == 2 ){
-            cont_realoc++;
+        cont_realoc++;
         realocate(iten1_m, bin1_m, bin2_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
         *phyI = *phyI - delta_melhor;
     }
 
     if(movimento == 3){
-            cont_swap2_1++;
+        cont_swap2_1++;
         Swap2_1(iten1_m, iten2_m, iten3_m, bin2_m, bin1_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
         *phyI = *phyI - delta_melhor;
     }
@@ -157,7 +157,7 @@ int busca_local_ILS2(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins in
     int movimento = 0;
     vector<int> bins_c_conflito = carrega_vetor_bins_conflito(bins);
     int bin1, bin2;
-    int cont_swap = 0, cont_realoc = 0, cont_swap2_1 = 0;
+
 
     if(bins_c_conflito.size() > 0){
         bin2 = rand() % bins_c_conflito.size();
@@ -210,25 +210,99 @@ int busca_local_ILS2(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins in
     }
 
     if(movimento == 1 ){
-        cont_swap++;
         Swap(iten1_m, iten2_m, bin1_m, bin2_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
         *phyI = *phyI - delta_melhor;
     }
 
     if(movimento == 2 ){
-            cont_realoc++;
         realocate(iten1_m, bin1_m, bin2_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
         *phyI = *phyI - delta_melhor;
     }
 
     if(movimento == 3){
-            cont_swap2_1++;
         Swap2_1(iten1_m, iten2_m, iten3_m, bin2_m, bin1_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
         *phyI = *phyI - delta_melhor;
     }
+    return movimento;
+}
 
-    //if(movimento != 0)
-    //cout << " movimento: " << movimento<< " swap: " << cont_swap << " realoc: " << cont_realoc << " swap2_1: " << cont_swap2_1
+int busca_local_ILS3(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, int *phyI, const int wc, const int ww){
+int iten1 = 0, iten2 = 0, iten3 = 0;
+    int  iten1_m = 0, iten2_m = 0, iten3_m = 0;
+    int bin1_m = 0, bin2_m = 0;
+    int delta_realocate = 0, delta_swap = 0, delta_swap_2_1 = 0, delta_melhor = 0;
+    int movimento = 0;
+    vector<int> bins_c_conflito = carrega_vetor_bins_conflito(bins);
+    int aleatorio = 0;
+
+    if(bins_c_conflito.size() > 0){
+        unsigned int i = 0;
+        while(i < bins_c_conflito.size() && movimento == 0){
+            unsigned int j = 0;
+            while(j < bins.size() && movimento == 0){
+                movimento = 0;
+                if(bins_c_conflito[i] != bins[j].id_bin-1){
+                    if(bins[i].id_bin != bins[j].id_bin){
+                        aleatorio = rand() % 5;
+                        if(movimento == 0 && aleatorio == 0){
+                            delta_swap = calcula_delta_swap_ILS3(bins, itens, bins_c_conflito[i], bins[j].id_bin-1, &iten1, &iten2, infoBins, (const int**)matriz_adj, wc, ww);
+                            if(delta_swap > delta_melhor){
+                                delta_melhor = delta_swap;
+                                movimento = 1;
+                                iten1_m = iten1;
+                                iten2_m = iten2;
+                                bin1_m = bins_c_conflito[i];
+                                bin2_m = bins[j].id_bin-1;
+                                Swap(iten1_m, iten2_m, bin1_m, bin2_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
+                                *phyI = *phyI - delta_melhor;
+                                break;
+                            }
+                        }
+
+                        if(movimento == 0 && (aleatorio > 0  && aleatorio < 3)){
+                            if(bins[bins_c_conflito[i]].items.size() > 1 ){
+                                delta_realocate = calcula_delta_realocate_ILS3(bins, itens, bins_c_conflito[i], bins[j].id_bin-1, &iten1, infoBins, (const int**)matriz_adj, wc, ww);
+                                if(delta_realocate > delta_melhor){
+                                    delta_melhor = delta_realocate;
+                                    movimento = 2;
+                                    iten1_m = iten1;
+                                    bin1_m = bins_c_conflito[i];
+                                    bin2_m = bins[j].id_bin-1;
+                                    realocate(iten1_m, bin1_m, bin2_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
+                                    *phyI = *phyI - delta_melhor;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if(movimento == 0 && (aleatorio > 2  && aleatorio < 5)){
+                            if(bins[bins_c_conflito[i]].items.size() >= 2 && bins[bins[j].id_bin-1].items.size() >= 1){
+                                delta_swap_2_1 = calcula_delta_swap_2_1_ILS3(bins, itens, bins_c_conflito[i], bins[j].id_bin-1, &iten1, &iten2, &iten3, infoBins, (const int**)matriz_adj, wc, ww);
+                                if(delta_swap_2_1 > delta_melhor){
+                                    delta_melhor = delta_swap_2_1;
+                                    movimento = 3;
+                                    iten1_m = iten1;
+                                    iten2_m = iten2;
+                                    iten3_m = iten3;
+                                    bin1_m = bins_c_conflito[i];
+                                    bin2_m = bins[j].id_bin-1;
+                                    Swap2_1(iten1_m, iten2_m, iten3_m, bin2_m, bin1_m, bins, itens, (const int**)matriz_adj, infoBins.quantItens);
+                                    *phyI = *phyI - delta_melhor;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                if(movimento != 0)break;
+                j++;
+            }
+            if(movimento != 0)break;
+            i++;
+        }
+    }
+
+    //cout << " movimento: " << movimento
     //<< " bin1: "<< bin1_m << " iten1: " << iten1_m <<  " iten2: " << iten2_m << " bin2: "<< bin2_m << " iten3: " << iten3_m << " delta melhor: " << delta_melhor << endl;
 
     return movimento;

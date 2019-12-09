@@ -248,3 +248,71 @@ int delta_remove_conflito(const int id_item1, const int bin, const int **matriz_
                 conflito_Depois += 1;
     return conflito_Depois;
 }
+
+int calcula_delta_swap_ILS3(const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, int *iten_2, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww){
+    int deltaG = 0, deltaP = 0, deltaC = 0;
+    int melhor = -1;
+
+    for(const auto& iten1: bins[bin1].items){
+        for(const auto& iten2: bins[bin2].items){
+            deltaP = delta_peso(bins, itens, bin1, bin2, iten1, iten2, infoBins) * ww;
+            deltaC = delta_conflito2(iten1, iten2, bin1, bin2, (const int**)matriz_adj, bins) * wc;
+            deltaG = deltaP - deltaC;
+
+            if(deltaG > melhor){
+                *iten_1 = iten1;
+                *iten_2 = iten2;
+                melhor = deltaG;
+                break;
+            }
+        }
+        if(deltaG > 0)break;
+    }
+    return melhor;
+}
+
+int calcula_delta_realocate_ILS3 (const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww){
+    int melhor = -1, deltaP = 0, deltaC = 0, deltaG = 0;
+
+    for(const auto& iten1: bins[bin1].items){
+        deltaP = delta_peso_realocete(bins, itens, iten1, bin1, bin2, infoBins.pesoBin) * ww;
+        deltaC = delta_conflito_realocate2 (iten1, bin1, bin2, matriz_adj, bins) * wc;
+        deltaG = deltaP - deltaC;
+
+        if(deltaG > melhor){
+            *iten_1 = iten1;
+            melhor = deltaG;
+            break;
+        }
+    }
+    return melhor;
+}
+
+int calcula_delta_swap_2_1_ILS3(const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, int *iten_2, int *iten_3, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww){
+    int deltaG = 0, deltaP = 0, deltaC = 0;
+    int melhor = -1;
+
+    for(const auto& iten3: bins[bin2].items){
+        for(const auto& iten1: bins[bin1].items){
+            for(const auto& iten2: bins[bin1].items){
+                if(iten1 != iten2){
+                    deltaP = delta_peso_swap_2_1(bins, itens, bin1, bin2, iten1, iten2, iten3, infoBins) * ww;
+                    deltaC = delta_conflito_swap_2_1_2(iten1, iten2, iten3, bin1, bin2, (const int**)matriz_adj, bins) * wc;
+                    deltaG = deltaP - deltaC;
+
+                    if(deltaG > melhor){
+                        *iten_1 = iten1;
+                        *iten_2 = iten2;
+                        *iten_3 = iten3;
+                        melhor = deltaG;
+                        break;
+                    }
+                    if(deltaG > 0) break;
+                }
+            }
+            if(deltaG > 0) break;
+        }
+        if(deltaG > 0) break;
+    }
+    return melhor;
+}
