@@ -226,7 +226,7 @@ int busca_local_ILS2(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins in
     return movimento;
 }
 
-int busca_local_ILS3(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, int *phyI, const int wc, const int ww){
+int busca_local_ILS3(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, int *phyI, const int wc, const int ww, int start_time,int time_limit){
 int iten1 = 0, iten2 = 0, iten3 = 0;
     int  iten1_m = 0, iten2_m = 0, iten3_m = 0;
     int bin1_m = 0, bin2_m = 0;
@@ -234,12 +234,13 @@ int iten1 = 0, iten2 = 0, iten3 = 0;
     int movimento = 0;
     vector<int> bins_c_conflito = carrega_vetor_bins_conflito(bins);
     int aleatorio = 0;
+    double cpu_time_used = 0;
 
     if(bins_c_conflito.size() > 0){
         unsigned int i = 0;
-        while(i < bins_c_conflito.size() && movimento == 0){
+        while(i < bins_c_conflito.size() && movimento == 0 && (cpu_time_used < time_limit)){
             unsigned int j = 0;
-            while(j < bins.size() && movimento == 0){
+            while(j < bins.size() && movimento == 0 && (cpu_time_used < time_limit)){
                 movimento = 0;
                 if(bins_c_conflito[i] != bins[j].id_bin-1){
                     if(bins[i].id_bin != bins[j].id_bin){
@@ -296,9 +297,11 @@ int iten1 = 0, iten2 = 0, iten3 = 0;
                 }
                 if(movimento != 0)break;
                 j++;
+                cpu_time_used = ((double) (clock() - start_time)) / CLOCKS_PER_SEC;
             }
             if(movimento != 0)break;
             i++;
+            cpu_time_used = ((double) (clock() - start_time)) / CLOCKS_PER_SEC;
         }
     }
 

@@ -49,12 +49,15 @@ void ILS(char *argv[]){
     double cpu_time_used;
     double time_limit = atof(argv[9]);
 
+    ww = correcao_peso(ww, wc);
     items = ler_arquivo_instancias(&info_bins, argv[1]);
     matriz_adj = alocar_matriz(info_bins.quantItens, info_bins.quantItens);
     carrega_matrizAdj(matriz_adj, argv[1]);
     criar_bins(S_inicial , info_bins);
     firstFit_ordenado(S_inicial, items, info_bins, (const int**)matriz_adj);
+
     //_______________________________________________________________________
+
     phyInicial = somatorio_phi(S_inicial, wc, ww);
     phyS_best = phyInicial;
     Klb = calcula_Klb(items, info_bins);
@@ -68,11 +71,12 @@ void ILS(char *argv[]){
         S_linha_linha = S_linha;
         iShack = 0;
 
-        while(((phyLinha > phyS_best) && (iShack < nSchak))){
+        while(((phyLinha > phyS_best) && (iShack < nSchak))&& (cpu_time_used < time_limit)){
             bl = 1;
 
-            while(bl != 0){
+            while(bl != 0 && (cpu_time_used < time_limit)){
                 bl = busca_local(S_linha_linha, items, info_bins, (const int**)matriz_adj, &phyLinha, wc, ww);
+                cpu_time_used = ((double) (clock() - start_time)) / CLOCKS_PER_SEC;
             }
 
             if(phyLinha < phyS_best){
@@ -83,6 +87,7 @@ void ILS(char *argv[]){
                 phyLinha = somatorio_phi(S_linha_linha, wc, ww);
                 iShack++;
             }
+            cpu_time_used = ((double) (clock() - start_time)) / CLOCKS_PER_SEC;
         }
         cpu_time_used = ((double) (clock() - start_time)) / CLOCKS_PER_SEC;
     }

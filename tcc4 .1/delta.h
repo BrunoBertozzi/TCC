@@ -28,4 +28,5 @@ int calcula_delta_swap_2_1_ILS3(const vector<Tbin> bins, const vector<Titem> ite
 int calcula_delta_realocate_ILS3 (const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww);
 int calcula_delta_swap_ILS3(const vector<Tbin> bins, const vector<Titem> itens, const int bin1, const int bin2, int *iten_1, int *iten_2, const TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww);
 
+int correcao_peso(int ww, int wc);
 #endif // DELTA_H_INCLUDED

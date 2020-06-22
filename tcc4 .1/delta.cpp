@@ -316,3 +316,10 @@ int calcula_delta_swap_2_1_ILS3(const vector<Tbin> bins, const vector<Titem> ite
     }
     return melhor;
 }
+
+int correcao_peso(int ww, int wc){
+    if(ww == 1 && ww == wc){
+        return (ww * 9);
+    }
+    return ww;
+}

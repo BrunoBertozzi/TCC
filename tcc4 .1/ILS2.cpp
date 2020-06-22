@@ -47,7 +47,7 @@ void ILS2(char *argv[]){
     double cpu_time_used;
     int bl = 0;
 
-
+    ww = correcao_peso(ww, wc);
     items = ler_arquivo_instancias(&info_bins, argv[1]);
     matriz_adj = alocar_matriz(info_bins.quantItens, info_bins.quantItens);
     carrega_matrizAdj(matriz_adj, argv[1]);
@@ -70,7 +70,7 @@ void ILS2(char *argv[]){
         iNsc = 0;
         bl = 0;
 
-        while(((phyLinha > phyS_best) && (iShack < nSchak))){
+        while(((phyLinha > phyS_best) && (iShack < nSchak))&& (cpu_time_used < time_limit)){
             iNsc = 0;
             bl = 0;
             for(int j = 0; j < Nls; j++){
@@ -94,6 +94,7 @@ void ILS2(char *argv[]){
                     iNsc = 0;
                 }
             }
+            cpu_time_used = ((double) (clock() - start_time)) / CLOCKS_PER_SEC;
         }
         cpu_time_used = ((double) (clock() - start_time)) / CLOCKS_PER_SEC;
     }

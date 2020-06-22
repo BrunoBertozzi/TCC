@@ -40,8 +40,9 @@ int **alocar_matriz (const int linha, const int coluna){
 
 
 int **libera_matriz (int **matriz, const int quant_iten){
-    for (int count = 0; count < quant_iten; count++)
+    for (int count = 0; count < quant_iten; count++){
         delete[] matriz[count];
+    }
 
 	delete[] matriz;
 	matriz = NULL;
