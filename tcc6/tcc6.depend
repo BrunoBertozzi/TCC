@@ -1,0 +1,231 @@
+# depslib dependency file v1.0
+1598127351 source:c:\users\bruno\documents\github\tcc\tcc6\ils_1.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	<cmath>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+	"Phy.h"
+	"delta_Movimentoa.h"
+	"movimento_BL.h"
+	"pertubacao.h"
+
+1598124741 source:c:\users\bruno\documents\github\tcc\tcc6\main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<iostream>
+	"structs.h"
+	"ILS_1.h"
+	"ILS_2.h"
+	"ILS_3.h"
+	<time.h>
+
+1596716477 c:\users\bruno\documents\github\tcc\tcc6\structs.h
+
+1597423689 c:\users\bruno\documents\github\tcc\tcc6\ils_1.h
+
+1596717942 c:\users\bruno\documents\github\tcc\tcc6\arquivo.h
+
+1596718013 source:c:\users\bruno\documents\github\tcc\tcc6\arquivo.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"structs.h"
+	"arquivo.h"
+
+1598125746 c:\users\bruno\documents\github\tcc\tcc6\matriaz_adj.h
+
+1598126171 source:c:\users\bruno\documents\github\tcc\tcc6\matriaz_adj.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<sstream>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+
+1598124892 source:c:\users\bruno\documents\github\tcc\tcc6\bins.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	<cmath>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+
+1598124892 c:\users\bruno\documents\github\tcc\tcc6\bins.h
+
+1596733614 c:\users\bruno\documents\github\tcc\tcc6\solucao_inicial.h
+
+1596733614 source:c:\users\bruno\documents\github\tcc\tcc6\solucao_inicial.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<bits/stdc++.h>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+
+1596734275 source:c:\users\bruno\documents\github\tcc\tcc6\algoritmo_verificacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+
+1596733989 c:\users\bruno\documents\github\tcc\tcc6\algoritmo_verificacao.h
+
+1596735155 source:c:\users\bruno\documents\github\tcc\tcc6\phy.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<math.h>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+	"Phy.h"
+
+1596734891 c:\users\bruno\documents\github\tcc\tcc6\phy.h
+
+1597423949 source:c:\users\bruno\documents\github\tcc\tcc6\delta_movimentoa.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<ctime>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+	"Phy.h"
+	"delta_Movimentoa.h"
+
+1597423596 c:\users\bruno\documents\github\tcc\tcc6\delta_movimentoa.h
+
+1597084076 c:\users\bruno\documents\github\tcc\tcc6\movimento_bl.h
+
+1597234870 source:c:\users\bruno\documents\github\tcc\tcc6\movimento_bl.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+	"Phy.h"
+	"delta_Movimentoa.h"
+	"movimento_BL.h"
+
+1597167385 c:\users\bruno\documents\github\tcc\tcc6\pertubacao.h
+
+1597278394 source:c:\users\bruno\documents\github\tcc\tcc6\pertubacao.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	"structs.h"
+	"arquivo.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+	"Phy.h"
+	"delta_Movimentoa.h"
+	"movimento_BL.h"
+	"pertubacao.h"
+
+1598125856 source:c:\users\bruno\documents\github\tcc\tcc6\ils_2.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	<cmath>
+	"structs.h"
+	"arquivo.h"
+	"ILS_2.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+	"Phy.h"
+	"delta_Movimentoa.h"
+	"movimento_BL.h"
+	"pertubacao.h"
+
+1597423689 c:\users\bruno\documents\github\tcc\tcc6\ils_2.h
+
+1597927503 c:\users\bruno\documents\github\tcc\tcc6\ils_3.h
+
+1598125836 source:c:\users\bruno\documents\github\tcc\tcc6\ils_3.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	<cmath>
+	"structs.h"
+	"arquivo.h"
+	"ILS_3.h"
+	"ILS_2.h"
+	"ILS_1.h"
+	"matriaz_Adj.h"
+	"bins.h"
+	"solucao_Inicial.h"
+	"algoritmo_Verificacao.h"
+	"Phy.h"
+	"delta_Movimentoa.h"
+	"movimento_BL.h"
+	"pertubacao.h"
+
