@@ -43,9 +43,6 @@ void ILS_2(char *argv[]){
 
     int **matriz_adj;
     int Klb;
-    int phyS_best = 0;
-    int phyLinha = 0;
-    int deltaPhy = 0;
     int iShack = 0;
     int tipoILS = atoi(argv[2]);
     int nSchak  = atoi(argv[3]);
@@ -57,6 +54,9 @@ void ILS_2(char *argv[]){
     int Sshack = atoi(argv[8]);
     int bl = 0;
 
+    double phyS_best = 0;
+    double phyLinha = 0;
+    double deltaPhy = 0;
     double time_limit = atof(argv[9]);
     double cpu_time_used;
 
@@ -125,12 +125,12 @@ void ILS_2(char *argv[]){
     delete matriz_adj;
 }
 
-int busca_local_ILS2(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww, int tipoILS){
+double busca_local_ILS2(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww, int tipoILS){
     int iten1 = 0, iten2 = 0, iten3 = 0;
     int  iten1_m = 0, iten2_m = 0, iten3_m = 0;
     int bin1_m = 0, bin2_m = 0;
 
-    int delta_movimento = 0, delta_melhor = 0;
+    double delta_movimento = 0, delta_melhor = 0;
     int movimento = 0;
 
     int bin1, bin2;

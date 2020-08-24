@@ -40,20 +40,20 @@ argumentos:
 -Time_Limit, tempo limite de execucao;
 */
 
-int pertubacao(vector<Tbin> &bins, const vector<Titem> itens, int Sshack, const TinfoBins infoBins, const int **matriz_adj, int ww, int wc){
+double pertubacao(vector<Tbin> &bins, const vector<Titem> itens, int Sshack, const TinfoBins infoBins, const int **matriz_adj, int ww, int wc){
     int bin1 = 0;
     int bin2 = 0;
     int iten = 0;
     int pos_bin = -1;
-    int Deltaphy = 0;
-    int PesoBin1Antes = 0;
-    int pesoBin2Antes = 0;
-    int PesoBin1Depois = 0;
-    int PesoBin2Depois = 0;
-    int ConflitoBin1Depois = 0;
-    int ConflitoBin2Depois = 0;
-    int PhyAntes = 0;
-    int PhyDepois = 0;
+    double Deltaphy = 0;
+    double PesoBin1Antes = 0;
+    double pesoBin2Antes = 0;
+    double PesoBin1Depois = 0;
+    double PesoBin2Depois = 0;
+    //double ConflitoBin1Depois = 0;
+    //double ConflitoBin2Depois = 0;
+    double PhyAntes = 0;
+    double PhyDepois = 0;
 
     //cout << "Sshack: " << Sshack << endl;
 
@@ -90,28 +90,28 @@ int pertubacao(vector<Tbin> &bins, const vector<Titem> itens, int Sshack, const 
         PesoBin1Antes = 0;
         pesoBin2Antes = 0;
 
-        if(bins[bin1].pesoLivre < 0) PesoBin1Antes = ((bins[bin1].pesoLivre * (-1))* ww);
+        if(bins[bin1].pesoLivre < 0) PesoBin1Antes = (double)((bins[bin1].pesoLivre * (-1))* ww);
         else PesoBin1Antes = 0;
 
-        if(bins[bin2].pesoLivre < 0) pesoBin2Antes = ((bins[bin2].pesoLivre * (-1))* ww);
+        if(bins[bin2].pesoLivre < 0) pesoBin2Antes = (double)((bins[bin2].pesoLivre * (-1))* ww);
         else pesoBin2Antes = 0;
 
-        PhyAntes = PesoBin1Antes + pesoBin2Antes + (bins[bin1].numConflitos * wc) + (bins[bin2].numConflitos * wc);
+        PhyAntes = PesoBin1Antes + pesoBin2Antes + (double)(bins[bin1].numConflitos * wc) + (double)(bins[bin2].numConflitos * wc);
 
         realocate(iten, bin1, bin2, bins, itens, matriz_adj, infoBins.quantItens);
 
-        PesoBin1Depois = ((bins[bin1].pesoLivre));
-        PesoBin2Depois = ((bins[bin2].pesoLivre));
+        PesoBin1Depois = (double)((bins[bin1].pesoLivre));
+        PesoBin2Depois = (double)((bins[bin2].pesoLivre));
 
-        if(bins[bin1].pesoLivre < 0) PesoBin1Depois = ((bins[bin1].pesoLivre * (-1))* ww);
+        if(bins[bin1].pesoLivre < 0) PesoBin1Depois = (double)((bins[bin1].pesoLivre * (-1))* ww);
         else PesoBin1Depois = 0;
 
-        if(bins[bin2].pesoLivre < 0) PesoBin2Depois = ((bins[bin2].pesoLivre * (-1))* ww);
+        if(bins[bin2].pesoLivre < 0) PesoBin2Depois = (double)((bins[bin2].pesoLivre * (-1))* ww);
         else PesoBin2Depois = 0;
 
-        PhyDepois = (PesoBin1Depois + PesoBin2Depois) + (ConflitoBin1Depois + ConflitoBin2Depois);
+        //PhyDepois = (PesoBin1Depois + PesoBin2Depois) + (ConflitoBin1Depois + ConflitoBin2Depois);
 
-        PhyDepois = (PesoBin1Depois + PesoBin2Depois) + (bins[bin1].numConflitos * wc) + (bins[bin2].numConflitos * wc);
+        PhyDepois = (PesoBin1Depois + PesoBin2Depois) + (double)(bins[bin1].numConflitos * wc) + (double)(bins[bin2].numConflitos * wc);
 
         Deltaphy += PhyDepois - PhyAntes;
 

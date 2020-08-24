@@ -75,12 +75,12 @@ void imprimir_bins(const vector<Tbin> bins, const vector<Titem> items){
     cout << "Quantidade de itens: "<<cont << endl;
 }
 
-int remove_bin_phy(vector<Tbin> &bins, const vector<Titem> items,  const int **matriz_adj, int ww, int wc){
+double remove_bin_phy(vector<Tbin> &bins, const vector<Titem> items,  const int **matriz_adj, int ww, int wc){
     int item;
-    int binAntigo = 0;
-    int binNovoAntes =0;
-    int binNovoDepois =0;
-    int deltaPhy = 0;
+    double binAntigo = 0;
+    double binNovoAntes =0;
+    double binNovoDepois =0;
+    double deltaPhy = 0;
     int tam_bins;
     int bim_rand;
     vector <int> vetor_itens;
@@ -95,7 +95,7 @@ int remove_bin_phy(vector<Tbin> &bins, const vector<Titem> items,  const int **m
         binAntigo = 0;
     }
 
-    binAntigo = binAntigo + (bins[bim_rand].numConflitos * wc);
+    binAntigo = binAntigo + (double)(bins[bim_rand].numConflitos * wc);
 
     deltaPhy = deltaPhy - (binAntigo + 1);
 
@@ -106,10 +106,10 @@ int remove_bin_phy(vector<Tbin> &bins, const vector<Titem> items,  const int **m
     for(unsigned int i = 0; i < vetor_itens.size(); i++){
         bim_rand = std::rand() % (tam_bins-1);
 
-        if(bins[bim_rand].pesoLivre < 0) binNovoAntes = ((bins[bim_rand].pesoLivre * (-1))* ww);
+        if(bins[bim_rand].pesoLivre < 0) binNovoAntes = (double)((bins[bim_rand].pesoLivre * (-1))* ww);
         else binNovoAntes = 0;
 
-        binNovoAntes = binNovoAntes + (bins[bim_rand].numConflitos * wc);
+        binNovoAntes = binNovoAntes + (double)(bins[bim_rand].numConflitos * wc);
 
         item = vetor_itens[i];
         bins[bim_rand].items.push_back(item);
@@ -117,13 +117,13 @@ int remove_bin_phy(vector<Tbin> &bins, const vector<Titem> items,  const int **m
         bins[bim_rand].pesoLivre -= items[item-1].peso;
         bins[bim_rand].numConflitos += (conflito_por_bin(bins[bim_rand].items, item, (const int**)matriz_adj));
 
-        if(bins[bim_rand].pesoLivre < 0)binNovoDepois = ((bins[bim_rand].pesoLivre * (-1))* ww);
+        if(bins[bim_rand].pesoLivre < 0)binNovoDepois = (double)((bins[bim_rand].pesoLivre * (-1))* ww);
         else binNovoDepois = 0;
 
-        binNovoDepois += (bins[bim_rand].numConflitos * wc);
+        binNovoDepois += (double)(bins[bim_rand].numConflitos * wc);
 
-        int delta = (binNovoDepois - binNovoAntes);
-        deltaPhy = deltaPhy + delta;
+        double delta = (binNovoDepois - binNovoAntes);
+        deltaPhy = deltaPhy + (double)delta;
 
     }
     return deltaPhy;
@@ -157,15 +157,15 @@ int conflito_por_bin(const vector<int> items, const int item, const int **matriz
     return cont;
 }
 
-int remove_bin_phy2(vector<Tbin> &bins, const vector<Titem> items,  const int **matriz_adj, int ww, int wc, int phy){
+double remove_bin_phy2(vector<Tbin> &bins, const vector<Titem> items,  const int **matriz_adj, int ww, int wc, double phy){
     int item;
-    int binNovoAntes =0;
-    int binNovoDepois =0;
-    int deltaPhy = 0;
+    double binNovoAntes =0;
+    double binNovoDepois =0;
+    double deltaPhy = 0;
     int tam_bins;
     int bim_rand;
-    int phyBinRemovido = 0;
-    int pesoBinRemovido = 0;
+    double phyBinRemovido = 0;
+    double pesoBinRemovido = 0;
 
     vector <int> vetor_itens;
 
@@ -173,11 +173,11 @@ int remove_bin_phy2(vector<Tbin> &bins, const vector<Titem> items,  const int **
     tam_bins = bins.size();
     bim_rand = std::rand() % tam_bins;
 
-    if(bins[bim_rand].pesoLivre < 0)pesoBinRemovido = ((bins[bim_rand].pesoLivre * (-1))* ww);
+    if(bins[bim_rand].pesoLivre < 0)pesoBinRemovido = (double)((bins[bim_rand].pesoLivre * (-1))* ww);
     else pesoBinRemovido = 0;
 
 
-    phyBinRemovido = pesoBinRemovido + (bins[bim_rand].numConflitos * wc);
+    phyBinRemovido = pesoBinRemovido + (double)(bins[bim_rand].numConflitos * wc);
 
     phy = phy - phyBinRemovido - 1;
 
@@ -188,10 +188,10 @@ int remove_bin_phy2(vector<Tbin> &bins, const vector<Titem> items,  const int **
     for(unsigned int i = 0; i < vetor_itens.size(); i++){
         bim_rand = std::rand() % (tam_bins-1);
 
-        if(bins[bim_rand].pesoLivre < 0) binNovoAntes = ((bins[bim_rand].pesoLivre * (-1))* ww);
+        if(bins[bim_rand].pesoLivre < 0) binNovoAntes = (double)((bins[bim_rand].pesoLivre * (-1))* ww);
         else binNovoAntes = 0;
 
-        binNovoAntes = binNovoAntes + (bins[bim_rand].numConflitos * wc);
+        binNovoAntes = binNovoAntes + (double)(bins[bim_rand].numConflitos * wc);
 
         item = vetor_itens[i];
         bins[bim_rand].items.push_back(item);
@@ -199,10 +199,10 @@ int remove_bin_phy2(vector<Tbin> &bins, const vector<Titem> items,  const int **
         bins[bim_rand].pesoLivre -= items[item-1].peso;
         bins[bim_rand].numConflitos += (conflito_por_bin(bins[bim_rand].items, item, (const int**)matriz_adj));
 
-        if(bins[bim_rand].pesoLivre < 0)binNovoDepois = ((bins[bim_rand].pesoLivre * (-1))* ww);
+        if(bins[bim_rand].pesoLivre < 0)binNovoDepois = (double)((bins[bim_rand].pesoLivre * (-1))* ww);
         else binNovoDepois = 0;
 
-        binNovoDepois += (bins[bim_rand].numConflitos * wc);
+        binNovoDepois += (double)(bins[bim_rand].numConflitos * wc);
 
         deltaPhy = (binNovoDepois - binNovoAntes);
         phy = phy + deltaPhy;

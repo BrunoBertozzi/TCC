@@ -39,7 +39,6 @@ void ILS_3(char *argv[]){
     vector <Tbin> S_linha_linha;
     int **matriz_adj;
     int Klb;
-    int phyS_best, deltaPhy = 0, phyLinha = 0;
     int iShack = 0;
     int tipoILS = atoi(argv[2]);
     int nSchak = atoi(argv[3]);
@@ -47,6 +46,8 @@ void ILS_3(char *argv[]){
     int ww = atoi(argv[6]);
     int wc = atoi(argv[7]);
     int Sshack = atoi(argv[8]);
+
+    double phyS_best, deltaPhy = 0, phyLinha = 0;
     double time_limit = atof(argv[9]);
     double cpu_time_used = 0;
 
@@ -108,11 +109,11 @@ void ILS_3(char *argv[]){
     delete matriz_adj;
 }
 
-int busca_local_ILS3(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww, int start_time,int time_limit, int tipoILS){
+double busca_local_ILS3(vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww, int start_time,int time_limit, int tipoILS){
     int iten1 = 0, iten2 = 0, iten3 = 0;
     int  iten1_m = 0, iten2_m = 0, iten3_m = 0;
     int bin1_m = 0, bin2_m = 0;
-    int deltaMovimento = 0, delta_melhor = 0;
+    double deltaMovimento = 0, delta_melhor = 0;
     int movimento = 0;
     int aleatorio = 0;
     int rand_vet[3] = {1 ,2 ,3};

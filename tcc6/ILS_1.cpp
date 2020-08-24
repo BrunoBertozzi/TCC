@@ -42,8 +42,6 @@ void ILS_1(char *argv[]){
 
     int **matriz_adj;
     int Klb;
-    int phyS_best, phyLinha = 0;
-    int deltaPhy = 0;
     int iShack = 0;
     int tipoILS = atoi(argv[2]);
     int nSchak = atoi(argv[3]);
@@ -52,6 +50,8 @@ void ILS_1(char *argv[]){
     int wc = atoi(argv[7]);
     int Sshack = atoi(argv[8]);
 
+    double phyS_best, phyLinha = 0;
+    double deltaPhy = 0;
     double cpu_time_used;
     double time_limit = atof(argv[9]);
 
@@ -120,13 +120,13 @@ void ILS_1(char *argv[]){
 
 }
 
-int buscaLocalILS1 (vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww, int tipoILS){
+double buscaLocalILS1 (vector<Tbin> &bins, const vector<Titem> itens, TinfoBins infoBins, const int **matriz_adj, const int wc, const int ww, int tipoILS){
     int iten1 = 0, iten2 = 0, iten3 = 0;        // itens auxiliares para calculo de delta
     int iten1_m = 0, iten2_m = 0, iten3_m = 0;  // melhores itens para movimento depois do calculo de delta
     int bin1_m = 0, bin2_m = 0;                 // melhores bins para movimento depois do calculo de delta
 
-    int delta_movimento = 0;
-    int delta_melhor = 0;                       //Melhor Delta
+    double delta_movimento = 0;
+    double delta_melhor = 0;                       //Melhor Delta
 
     int movimento = 0;                          //Movimento executado
     int size_bins_c_conflito = 0;

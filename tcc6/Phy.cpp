@@ -22,17 +22,17 @@ using namespace std;
 #include "algoritmo_Verificacao.h"
 #include "Phy.h"
 
-int somatorio_phi (const vector<Tbin> bins, const int wc, const int ww){
-    int contador = 0, over_peso = 0;
+double somatorio_phi (const vector<Tbin> bins, const int wc, const int ww){
+    double contador = 0, over_peso = 0;
 
     for(const auto& x: bins){
         over_peso = 0;
 
-        if(x.pesoLivre < 0) over_peso = x.pesoLivre * (-1);
+        if(x.pesoLivre < 0) over_peso = (double)(x.pesoLivre * (-1));
 
-        contador +=(x.numConflitos * wc) + (over_peso * ww);
+        contador +=(double)((x.numConflitos * wc) + (over_peso * ww));
     }
-    return (contador + bins.size());
+    return ((double)(contador + bins.size()));
 }
 
 int calcula_Klb(const vector<Titem> items, const TinfoBins infoBins){

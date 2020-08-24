@@ -15,7 +15,7 @@
  * @parametro peso para excesso de peso no bin
  * @retorno (x.numConflitos * wc) + (over_peso * ww) + bins.size()
  */
-int somatorio_phi (const vector<Tbin> bins, const int wc, const int ww);
+double somatorio_phi (const vector<Tbin> bins, const int wc, const int ww);
 
 /**
  * Calcular o lower Bounde (menor quantidade de bins): Sum(peso itens) / (peso max por bin)
