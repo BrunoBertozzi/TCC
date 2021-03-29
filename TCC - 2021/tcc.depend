@@ -1,0 +1,148 @@
+# depslib dependency file v1.0
+1613615137 source:c:\users\bruno\desktop\tcc\ils.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	<cmath>
+	"struct.h"
+
+1616429388 source:c:\users\bruno\desktop\tcc\main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<iostream>
+	"head_struct.h"
+	"head_ILS.h"
+	"head_matrix.h"
+	"head_file.h"
+	"head_bins.h"
+	"head_phi.h"
+	"head_solucaoInicial.h"
+	"head_buscalocal.h"
+	"head_mov_buscalocal.h"
+	"head_LAHC.h"
+
+1613615324 c:\users\bruno\desktop\tcc\ils.h
+
+1613614715 c:\users\bruno\desktop\tcc\struct.h
+
+1616380284 source:c:\users\bruno\desktop\tcc\cod_file.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	"head_struct.h"
+	"head_file.h"
+
+1616387076 c:\users\bruno\desktop\tcc\head_ils.h
+
+1616387080 source:c:\users\bruno\desktop\tcc\cod_ils.cpp
+	<iostream>
+	<vector>
+	<ctime>
+	"head_struct.h"
+	"head_ILS.h"
+	"head_bins.h"
+	"head_buscalocal.h"
+	"head_pertubacao.h"
+
+1616429613 c:\users\bruno\desktop\tcc\head_struct.h
+
+1616380999 c:\users\bruno\desktop\tcc\head_file.h
+
+1616380284 source:c:\users\bruno\desktop\tcc\cod_matrix.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<sstream>
+	"head_struct.h"
+	"head_file.h"
+	"head_matrix.h"
+
+1616127117 c:\users\bruno\desktop\tcc\head_matrix.h
+
+1616384551 source:c:\users\bruno\desktop\tcc\cod_bins.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	<cmath>
+	"head_struct.h"
+	"head_bins.h"
+
+1616380284 source:c:\users\bruno\desktop\tcc\cod_solucaoinicial.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<bits/stdc++.h>
+	"head_struct.h"
+	"head_solucaoInicial.h"
+
+1616384550 c:\users\bruno\desktop\tcc\head_bins.h
+
+1616127117 c:\users\bruno\desktop\tcc\head_solucaoinicial.h
+
+1615464515 source:c:\users\bruno\desktop\tcc\cod_phi.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	"head_struct.h"
+
+1616383804 c:\users\bruno\desktop\tcc\head_phi.h
+
+1616128267 source:c:\users\bruno\desktop\tcc\cod_buscalocal.cpp
+	<iostream>
+	<vector>
+	"head_struct.h"
+	"head_buscalocal.h"
+	"head_delta_mov.h"
+	"head_mov_buscalocal.h"
+
+1616380284 c:\users\bruno\desktop\tcc\head_buscalocal.h
+
+1616126871 source:c:\users\bruno\desktop\tcc\cod_delta_mov.cpp
+	<iostream>
+	<vector>
+	"head_struct.h"
+
+1616127117 c:\users\bruno\desktop\tcc\head_delta_mov.h
+
+1616127117 c:\users\bruno\desktop\tcc\head_mov_buscalocal.h
+
+1616380182 source:c:\users\bruno\desktop\tcc\cod_mov_buscalocal.cpp
+	<iostream>
+	<vector>
+	"head_struct.h"
+	"head_mov_buscalocal.h"
+
+1616380182 source:c:\users\bruno\desktop\tcc\cod_pertubacao.cpp
+	<iostream>
+	<vector>
+	<ctime>
+	"head_struct.h"
+	"head_pertubacao.h"
+	"head_mov_buscalocal.h"
+
+1616380284 c:\users\bruno\desktop\tcc\head_pertubacao.h
+
+1617015511 source:c:\users\bruno\desktop\tcc\cod_lahc.cpp
+	<iostream>
+	<vector>
+	<ctime>
+	"head_struct.h"
+	"head_LAHC.h"
+	"head_bins.h"
+	"head_buscalocal.h"
+
+1616417485 c:\users\bruno\desktop\tcc\head_lahc.h
+
